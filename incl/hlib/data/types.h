@@ -18,8 +18,9 @@ typedef uint_fast64_t Uint64;
 typedef size_t Size;
 typedef ssize_t Ssize;
 
-typedef int8_t Char;
+typedef char Char;
 typedef Char* String;
+typedef intptr_t Ptr;
 
 #define Bool bool
 #define File FILE

@@ -8,7 +8,7 @@ Void free_stack(Stack **stack);
 Int8 peak_stack(const Stack *stack, Void** data);
 Int8 pop_stack(Stack *stack, Void **data);
 Int8 push_stack(Stack *stack, const Void *data);
-Int8 print_stack(File *stream, Stack *stack, const Char *format);
+Int8 print_stack(File *stream, Stack *stack, const String format);
 Int64 stack_get_cnt(const Stack *stack);
 Int64 stack_get_max(const Stack *stack);
 

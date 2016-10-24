@@ -1,6 +1,7 @@
 #include <hlib/data/stack.h>
 #include <hlib/data/types.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 struct stack{
      Int64 max, cnt;
@@ -54,11 +55,11 @@ Int8 push_stack(struct stack *stack, const Void *data)
      return 0;
 }
 
-Int8 print_stack(File *stream, struct stack *stack, const Char *format)
+Int8 print_stack(File *stream, struct stack *stack, const String format)
 {
      if(!stack) return  1;
      for(Int64 i=0; i<stack->cnt; i++)
-          if(fprintf(stream, format, *stack->data[i])<0) return 4;
+          if(fprintf(stream, format, (sizeof(int))stack->data[i])) return 4;
      return 0;
 }
 
