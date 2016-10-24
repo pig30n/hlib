@@ -1,8 +1,9 @@
 #ifndef H_LIB_TYPES_H
 
-#include <types.h>
-#include <stdint.h>
+#include <sys/types.h>
+#include <inttypes.h>
 #include <stdbool.h>
+#include <stdio.h>
 
 typedef int8_t       Int8;
 typedef int_fast16_t Int16;
@@ -16,6 +17,9 @@ typedef uint_fast64_t Uint64;
 
 typedef size_t Size;
 typedef ssize_t Ssize;
+
+typedef int8_t Char;
+typedef Char* String;
 
 #define Bool bool
 #define File FILE
